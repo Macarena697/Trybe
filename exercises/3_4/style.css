@@ -1,0 +1,59 @@
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    background-color: coral;
+}
+.navigation {
+    padding: 0 30px;
+}
+.navigation ul {
+    display: flex;
+    padding: 5px; 
+    width: 100%;
+}
+.navigation li {
+    margin-right: 40px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.navigation li a  {
+    color: coral;
+}
+h1 {
+    color:white;
+    text-align: center;
+    font-size:35px ;
+}
+p {
+    width: 70%;
+}
+.header{
+    background-color: black;
+    padding: 5px;
+    margin: auto;
+    width: 100%;
+}
+.conteudo{
+    margin-left: 20px;
+}
+.aspectos-generais{
+    margin-left: 20px;
+}
+.visao{
+    margin-left: 20px;
+    border: 10px solid black;
+    padding-left: 10px;
+}
+.tabela{
+    border:5px black;
+    border-style: groove;
+}
+.img-visao{
+    width: 250px;
+    float: right;
+    margin-right: 20px;
+    border-radius:50%;
+}
+
+
+  
