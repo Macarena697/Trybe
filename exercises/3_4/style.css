@@ -1,10 +1,9 @@
-body{
+body {
     margin: 0px 0px 0px 0px;
     padding: 0;
     background-color: coral;
     font-family: 'Abel', sans-serif;
-    font-size: 1.2em;
-}
+    font-size: 1.4em;}
 .navigation {
     padding: 0 30px;
 }
@@ -16,15 +15,15 @@ body{
 .navigation li {
     margin-right: 40px;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 30px;
 }
-.navigation li a  {
+.navigation li a {
     color: coral;
     text-shadow: rgb(85, 66, 59) 2px 2px 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
 h1 {
-    color:white;
+    color:#FDF0E0;
     text-align: center;
     font-size:2em ;
     text-shadow: coral 2px 2px 10px;
@@ -36,12 +35,12 @@ section h2 {
     font-family: 'Montserrat Subrayada', sans-serif;
     margin: 40px 20px 60px 60px;
 }
-h3 {
-    color: white;
+.conteudo h3 {
+    color: #FDF0E0;
     font-family: 'Montserrat Subrayada', sans-serif;
     text-shadow: black 2px 2px 10px;
 }
-.header{
+.header, footer {
     background-color: black;
     padding: 5px;
     margin: auto;
@@ -54,7 +53,7 @@ h3 {
     width: 70%;
 }
 .tabela{
-    border:5px white;
+    border:5px #006FAF;
     border-style: groove;
     text-align: center;
     margin-left: 50px;
@@ -73,14 +72,29 @@ h3 {
 .img-tabela img{
     width: 200px;
     border-radius:50%;
+}   
+.biblografia, .video-stomatopoda h3 {
+    color: #006FAF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin-left: 25px;
+}
+.biblografia li {
+    font-weight: bold;
+    color: #FDF0E0;
+    font-size: 30px;
+    margin-left:20px ;
+}
+.biblografia li a {
+    color: #006FAF;
+    margin-left: 10px;
+}
+.video-stomatopoda {
+    margin: 20px;
 }
 footer h2{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: coral;
+    text-shadow: rgb(85, 66, 59) 2px 2px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
 }
-.biblografia {
-    border: 1px solid black;
-}
-
-
   
