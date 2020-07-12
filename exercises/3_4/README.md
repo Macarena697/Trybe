@@ -30,4 +30,4 @@ Adicione um rodapé na página, mostrando algo do gênero "Conteúdo compilado p
 
 Obs: para esse exercício, é obrigatório fazer uso de no mínimo elementos com as seguintes tags: header, nav, article, section, h1, h2, h3, aside, footer, table e img.
 
-:wq
+
