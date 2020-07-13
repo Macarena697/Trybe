@@ -18,3 +18,7 @@ console.log(multi);
 //Divisao
 let divi = a / b;
 console.log(multi);
+
+//Modulo
+let modulo = a % b;
+console.log(modulo);
