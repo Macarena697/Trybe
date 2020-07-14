@@ -9,10 +9,9 @@
 
 let nota = 56;
 let letra;
-let bandeira;
+let bandeira = false;
 if (0 < nota && nota > 100){
   console.log('Por favor, colque um valor de 0 a 100');
-  bandeira = false;
 } else if (nota >= 90) { 
   letra = 'A';
   bandeira = true;
@@ -33,7 +32,6 @@ if (0 < nota && nota > 100){
   bandeira = true;
 } else{ 
   console.log('Por favor coloque un valor numerico de 0 a 100');
-  bandeira = false;
 } 
 
 if (bandeira == true){
