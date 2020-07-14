@@ -20,7 +20,7 @@ let resto2 = num2 % 2;
 let resto3 = num3 % 2;
 let bandeira
 
-if (resto1 == 0 || resto2 == 0 || resto3 == 0) {
+if (num1 % 2 == 0 || resto2 == 0 || resto3 == 0) {
   bandeira = true;
 }else {
   bandeira = false;
