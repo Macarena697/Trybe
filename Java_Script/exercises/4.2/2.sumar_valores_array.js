@@ -5,4 +5,4 @@ let suma = 0;
 for (let i = 0; i < numbers.length; i += 1){
   suma = suma + numbers[i];
 }
-console.log(suma)
+console.log(suma);
