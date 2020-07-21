@@ -57,10 +57,15 @@
         mudarDescrpcao();
 
         function mudarCorAmarelo() {
-          document.getElementsByClassName('main-content')[0].style.backgroundColor = 'blue';
+          document.getElementsByClassName('main-content')[0].style.backgroundColor = 'green';
         }
         mudarCorAmarelo();
         
+        function mudarCorVermelho(color) {
+          document.getElementsByClassName('center-content')[0].style.backgroundColor = color;
+        }
+        mudarCorVermelho('white');
+
     </script>
   </body>
 </html>
