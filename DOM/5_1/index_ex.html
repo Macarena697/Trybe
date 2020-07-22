@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+    .paragraph {
+      color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p class="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p class="paragraph">Segundo parágrafo!</p>
+
+    <script>
+      let paragraph = document.getElementsByClassName("paragraph")[0];
+      paragraph.style.color = "red";
+      let titulo = document.getElementById("page-title").innerHTML = 'Harry Potter';
+      let segundoP = document.getElementsByClassName("paragraph")[1];
+      segundoP.style.color = "blue";
+      document.getElementsByTagName("h4");
+
+
+    </script>
+  </body>
+</html>
