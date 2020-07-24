@@ -42,6 +42,7 @@
 				  </li>
         </ol>
       </div>
+        <img class= 'imagens' src="./img1.jpg">
     </div>
   </body>
   <script language="javascript" type="text/javascript">
@@ -71,7 +72,13 @@
     });
 
     //Extensions
-    //For this task you will need two images of the same    size. Add one image into this page using a html <img />   tag. Using the onMouseOver() and onMouseOut() event    handlers try and make the image change to the second    image when the mouse pointer hovers over it, and then    swap back to the first image when the mouse pointer is   moved off of the image.This tutorial may be of help!
+    //For this task you will need two images of the same size. Add one image into this page using a html <img /> tag. Using the onMouseOver() and onMouseOut() event    handlers try and make the image change to the second    image when the mouse pointer hovers over it, and then    swap back to the first image when the mouse pointer is   moved off of the image.This tutorial may be of help!
+     
+    imagens.addEventListener('mouseover', function(){
+      let imagens = document.querySelector('.imagens');
+      img.src = "./img2.jpg"
+    })
+
 
     
 
