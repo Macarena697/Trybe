@@ -8,9 +8,63 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h1>
-  <p>
-    "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-  </p>
+  <h1 id="title">Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h1>
+  <div id="content">
+    <p>
+      "At vero eos et accusamus et iusto odio dignissimos   ducimus qui blanditiis praesentium voluptatum   deleniti atque corrupti quos dolores et quas  molestias excepturi sint occaecati cupiditate non  provident, similique sunt in culpa qui officia   deserunt mollitia animi, id est laborum et dolorum  fuga. Et harum quidem rerum facilis est et expedita  distinctio. Nam libero tempore, cum soluta nobis est   eligendi optio cumque nihil impedit quo minus id  quod maxime placeat facere possimus, omnis voluptas  assumenda est, omnis dolor repellendus. Temporibus   autem quibusdam et aut officiis debitis aut rerum   necessitatibus saepe eveniet ut et voluptates   repudiandae sint et molestiae non recusandae. Itaque  earum rerum hic tenetur a sapiente delectus, ut aut  reiciendis voluptatibus maiores alias consequatur  aut perferendis doloribus asperiores repellat."
+    </p>
+  </div>
+  <div id="seleccion">
+    <div id="colors" class="colum">
+      <h2>YOUR COR</h2>
+      <div class="color red"></div>
+      <div class="color purple"></div>
+      <div class="color green"></div>
+      <div class="color yellow"></div>
+    </div>
+    <div id="fonte" class="colum">
+      <button>Arial</button>
+      <button>Arial</button>
+    </div>
+  </div>
 </body>
+<script type="text/javascript">
+window.onload = function() {
+
+  //CAMBIAR COR
+  let p = document.querySelector('p');
+  let colorRed = document.querySelector('.red');
+  
+  colorRed.addEventListener('click', function() {
+    p.style.backgroundColor = 'red'
+  })
+
+  let colorPurple = document.querySelector('.purple');
+  
+  colorPurple.addEventListener('click', function() {
+    p.style.backgroundColor = 'purple'
+  })
+
+  let colorGreen = document.querySelector('.green');
+  
+  colorGreen.addEventListener('click', function() {
+    p.style.backgroundColor = 'green'
+  })
+
+  let colorYellow = document.querySelector('.yellow');
+  
+  colorYellow.addEventListener('click', function() {
+    p.style.backgroundColor = 'yellow'
+  })
+
+  //let backgroundColorButtons = document.querySelectorAll//("#colors>div")
+  //    for (let i = 0; i < backgroundColorButtons.length; //i += 1) {
+  //      backgroundColorButtons[i].addEventListener//("click", function(event) {
+  //        setBackgroundColor(event.target.innerHTML)
+  //      })
+  //    }
+
+
+}
+</script>
 </html>
