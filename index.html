@@ -17,10 +17,10 @@
   <div id="seleccion">
     <div id="colors" class="colum">
       <h2>YOUR COR</h2>
-      <div class="color red"></div>
-      <div class="color purple"></div>
-      <div class="color green"></div>
-      <div class="color yellow"></div>
+      <div class="red color"></div>
+      <div class="purple color"></div>
+      <div class="green color"></div>
+      <div class="yellow color"></div>
     </div>
     <div id="fonte" class="colum">
       <button>Arial</button>
@@ -30,39 +30,47 @@
 </body>
 <script type="text/javascript">
 window.onload = function() {
+  let cor = document.querySelectorAll('#colors>div');
+  
+  for (let i = 0; i < cor.length; i += 1) {
+    cor[i].addEventListener('click', function(){
+      changeColor(document.querySelectorAll('#colors>div')[i].classList[0]);
+    })
+  }
+  
+  function changeColor(color) {
+    let p = document.querySelector('p');
+    p.style.backgroundColor = color;
+  }
+
+  
 
   //CAMBIAR COR
-  let p = document.querySelector('p');
-  let colorRed = document.querySelector('.red');
-  
-  colorRed.addEventListener('click', function() {
-    p.style.backgroundColor = 'red'
-  })
+  //let p = document.querySelector('p');
+  //let colorRed = document.querySelector('.red');
+  //
+  //colorRed.addEventListener('click', function() {
+  //  p.style.backgroundColor = 'red'
+  //})
+//
+  //let colorPurple = document.querySelector('.purple');
+  //
+  //colorPurple.addEventListener('click', function() {
+  //  p.style.backgroundColor = 'purple'
+  //})
+//
+  //let colorGreen = document.querySelector('.green');
+  //
+  //colorGreen.addEventListener('click', function() {
+  //  p.style.backgroundColor = 'green'
+  //})
+//
+  //let colorYellow = document.querySelector('.yellow');
+  //
+  //colorYellow.addEventListener('click', function() {
+  //  p.style.backgroundColor = 'yellow'
+  //})
 
-  let colorPurple = document.querySelector('.purple');
-  
-  colorPurple.addEventListener('click', function() {
-    p.style.backgroundColor = 'purple'
-  })
-
-  let colorGreen = document.querySelector('.green');
-  
-  colorGreen.addEventListener('click', function() {
-    p.style.backgroundColor = 'green'
-  })
-
-  let colorYellow = document.querySelector('.yellow');
-  
-  colorYellow.addEventListener('click', function() {
-    p.style.backgroundColor = 'yellow'
-  })
-
-  //let backgroundColorButtons = document.querySelectorAll//("#colors>div")
-  //    for (let i = 0; i < backgroundColorButtons.length; //i += 1) {
-  //      backgroundColorButtons[i].addEventListener//("click", function(event) {
-  //        setBackgroundColor(event.target.innerHTML)
-  //      })
-  //    }
 
 
 }
