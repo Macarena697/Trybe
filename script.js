@@ -6,4 +6,6 @@ window.onload = function () {
     options.innerHTML = states[i];
     statesBox.appendChild(options);
   }
+  let date = document.querySelector('#date').value;
+  date = date.split('-');
 }
