@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#first-part {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(214, 214, 122);
+  margin: 0px auto 0px auto;
+  width: 40%;
+}
+
+#first-part input[type="text"] {
+  width: 100%;
+}
+
+#first-part input {
+  margin: 10px auto 10px auto;
+}
+
+#second-part {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(45, 151, 128, 0.37);
+  margin: 0px auto 0px auto;
+  width: 40%;
+}
