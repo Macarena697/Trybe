@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
-#first-part {
+fieldset {
+  width: 50%;
   margin: 20px;
   padding: 20px;
+  border-radius: 15%;
+}
+
+#first-part {
   background-color: rgb(214, 214, 122);
   margin: 0px auto 0px auto;
-  width: 40%;
 }
 
 #first-part input[type="text"] {
@@ -21,9 +25,24 @@
 }
 
 #second-part {
-  margin: 20px;
-  padding: 20px;
   background-color: rgba(45, 151, 128, 0.37);
+  margin: 10px auto 10px auto;
+  text-align: center;
+}
+
+#second-part input {
+  margin: 15px;
+}
+
+#botoes-part {
   margin: 0px auto 0px auto;
-  width: 40%;
+  text-align: center;
+  background-color: rgb(163, 125, 125);
+}
+
+#botoes-part button {
+  background-color: rgb(159, 159, 179);
+  border: 1px solid lightblue;
+  border-radius: 15%;
+  padding: 20px;
 }

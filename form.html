@@ -8,7 +8,7 @@
   <script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
-  <form id="form" action="">
+  <form id="my-form" name="my-form" target="_self">
     <fieldset id="first-part">
       <div>
         <label for="full-name">Nome</label>
@@ -44,20 +44,28 @@
   </fieldset>
   <fieldset id="second-part">
     <div>
-      <textarea name="resume-curriculum" id="resume-curriculum" cols="30" rows="10" maxlength="1000" placeholder="Digite um resume do seu curriculo aqui"></textarea>
+      <textarea name="resume-curriculum" id="resume-curriculum" cols="50" rows="10" maxlength="1000" placeholder="Digite um resume do seu curriculo aqui"></textarea>
     </div>
     <div>
       <label for="job-title">Cargo</label>
       <input type="text" id="job-title" name="job-title" required maxlength="40">
     </div>
     <div>  
-      <textarea name="job-title-descriptiion" id="job-title-descriptiion" cols="30" rows="10" maxlength="500" required></textarea>
+      <textarea name="job-title-descriptiion" id="job-title-descriptiion" cols="50" rows="10" maxlength="500" required></textarea>
     </div>
     <div>
       <input type="date" required id="date" name="date">
     </div>
-    
   </fieldset>
+  <fieldset id="botoes-part">
+    <button type="submit" name="button-save" id="button-save">SALVAR</button>
+    <button type="reset" name="button-reset" id="button-reset">RESET</button>
+  </fieldset>
+  <fieldset >
+    <div id="show-part">
+
+    </div>
+  </fieldset>  
   </form>
 </body>
 </html>
