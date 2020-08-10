@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: grey;
+  padding: 10px;
+}
+
+h1 {
+  width: 90%;
+  text-align: center;
+  margin: 0px auto;
+  font-size: 1.5em;
+  color:rgb(193, 241, 225);
+}
+
+#list { 
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  margin-top: 10px;
+  list-style: none;
+}
+h2 {
+  margin: 20px 10px;
+  color: blueviolet;
+}
+
+.aside-one ul li {
+  margin-left: 10px;
+}
+
+@media screen and (max-width:320px) {
+  body {
+    background-color: rgb(197, 190, 190);
+  }
+}
