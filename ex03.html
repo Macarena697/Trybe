@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--Crie uma página que contenha:
+Um botão ao qual será associado um event listener;
+Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
+Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada. -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="button" type="submit">CLICK</button>
+  <p class="campo"></p>
+</body>
+<script>
+  const button = document.querySelector('.button');
+  let clickCount = 0;
+  button.addEventListener('click', function(event) {
+    clickCount += 1;
+    let campo = document.querySelector('.campo');
+    campo.innerHTML = clickCount;
+  });
+  let campo = document.querySelector('.campo');
+  campo.innerHTML = clickCount;
+</script>
+</html>
