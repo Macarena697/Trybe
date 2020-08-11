@@ -1,25 +1,25 @@
-//  Adicionando novas chaves (keys)
-const customer = {
-  firstName: 'Roberto',
-  age: 22,
-  job: 'Teacher',
-};
-
-let newKey = 'lastName';
-const lastName = 'Ferreira';
-customer[newKey] = lastName;
-newKey = 'fullName';
-const fullName = `${customer.firstName} ${customer.//lastName}`;
-customer[newKey] = fullName;
-console.log(customer);
-
-function objeto(objeto, nomeChave, valor) {
-  objeto = {};
-  objeto[nomeChave] = valor;
-  console.log(objeto);
-}
-
-objeto("carro", "color", "azul");
+////  Adicionando novas chaves (keys)
+//const customer = {
+//  firstName: 'Roberto',
+//  age: 22,
+//  job: 'Teacher',
+//};
+//
+//let newKey = 'lastName';
+//const lastName = 'Ferreira';
+//customer[newKey] = lastName;
+//newKey = 'fullName';
+//const fullName = `${customer.firstName} ${customer.//lastName}`;
+//customer[newKey] = fullName;
+//console.log(customer);
+//
+//function objeto(objeto, nomeChave, valor) {
+//  objeto = {};
+//  objeto[nomeChave] = valor;
+//  console.log(objeto);
+//}
+//
+//objeto("carro", "color", "azul");
 
 //  Parte II - Object.keys
 // Logging property names and values using Array.forEach
