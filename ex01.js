@@ -14,11 +14,17 @@ function sum(a, b) {
 
   //  2-Teste se o retorno de sum(0, 0) é 0
   expected = sum(0, 0);
-  assert.equal(expected, 0, "Tem que ser 0");
+  assert.equal(expected, 1, "Tem que ser 0");
 
   //  3-Teste se a função sum lança um erro quando os parametros são 4 e "5"(string 5)
   expected = sum(4, "5");
   assert(expected);
 
   //  4-Teste se a mensagem de erro é "parameters must be numbers" quando realizar a chamada sum(4, "5")
-  assert.fail(expected);
+  //expected = sum(4, "5");
+  
+  assert.throws(() => {
+    sum(4, '5');
+  }, /^Error: parameters mumbers$/);
+
+  
