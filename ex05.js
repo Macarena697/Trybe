@@ -9,7 +9,7 @@ const books = [
       name: 'George R. R. Martin',
       birthYear: 1948,
     },
-    releaseYear: 1991,
+    releaseYear: 1985,
   },
   {
     id: 2,
@@ -66,10 +66,9 @@ const books = [
 //  Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
 const expected_result = false
 
-function everyoneWasBornOnSecXX() {
+const everyoneWasBornOnSecXX = () => {
   // escreva seu código aqui
-  return books.every(book => {
-    book.author.birthYear > 1900 && book.author.birthYear <= 2000;
-  });
+  return books.every(book => book.author.birthYear > 1900 && book.author.birthYear <= 2000 );
 }
+
 assert.equal(everyoneWasBornOnSecXX(), expected_result);
