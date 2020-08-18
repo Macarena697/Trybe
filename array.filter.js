@@ -11,6 +11,7 @@ const isEven2 = numbers.filter((number) => number % 2 === 0);
 
 console.log(isEven2); // [ 30, 22 ]
 
+//  ---------------------------------------------------
 //    pegar os elementos que não possuem alguma condição. Neste caso, deseja-se apenas as pessoas que não possuem ainda idade para dirigir:
 
 
@@ -29,7 +30,7 @@ const verifyAgeDrive = (arrayOfPeople) => (
 console.log(verifyAgeDrive(objPeople)); // [ { name: 'Maria', age: 16 }, { name: 'Vitor', age: 15 } ]
 
 
-
+//  --------------------------------------------------
 //   Outra forma de se usar o filter é retornar um array sem o elemento desejado. É preciso remover o Ricardo do objeto agora, já que ele não é mais um estudante.
 
 const arrayMyStudents = ['Maria', 'Manuela', 'Jorge', 'Ricardo', 'Wilson'];
