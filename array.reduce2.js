@@ -72,10 +72,10 @@ const estudantes = [
     ]
   },
 ]
-
-const getBestClass = (acc, class) => {
-  if (acc.nota > class.nota) return acc;
-  return class;
+//  GABARITO https://course.betrybe.com/front-end/arrays-and-hof/hof-part-3/solutions
+const getBestClass = (acc, classa) => {
+  if (acc.nota > classa.nota) return acc;
+  return classa;
 }
 
 const reportBetter = (students) => {
