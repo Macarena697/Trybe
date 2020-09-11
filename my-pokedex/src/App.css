@@ -1,0 +1,17 @@
+.pokemon-show {
+  margin: auto;
+  padding-top: 20px;
+  width: 50%;
+  text-align: center;
+  background-color: rgba(206, 201, 195, 0.603);
+  color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+  color: blueviolet;
+}
+
+img {
+  width: 20%;
+}
