@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { addForm } from './redux/actions'
+import { addAge, addText, addCheck } from './redux/actions'
 import { connect } from 'react-redux'
 
 class App extends React.Component {
@@ -8,6 +8,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.state= {
       idade: 0,
       vaiVir: "true",
@@ -23,8 +24,16 @@ class App extends React.Component {
     });
   }
 
+  handleSubmit(event) {
+    event.preventDefault();
+    const { addText, addCheck, addAge } = this.props;
+    const { estadoFavorito, idade, vaiVir } = this.state
+    addText(estadoFavorito)
+    addCheck(vaiVir);
+    addAge(idade)
+  }
+
   render() {
-    const { addForm } = this.props;
     return (
       <div>
         <h1>FORMULARIO</h1>
@@ -51,7 +60,7 @@ class App extends React.Component {
               onChange={this.handleChange}>
             </textarea>
           </label>
-          <button onClick={() => addForm(this.state.estadoFavorito)}>ENVIAR</button>
+          <button onClick={this.handleSubmit}>ENVIAR</button>
 
         </form>
       </div>
@@ -59,8 +68,6 @@ class App extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  addForm: (e) => dispatch(addForm(e))
-});
+const mapDispatchToProps = { addAge, addCheck, addText }
 
 export default connect (null, mapDispatchToProps) (App)
